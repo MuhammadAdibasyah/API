@@ -1,8 +1,6 @@
-name: Automation Web and API Workflow
+name: Automation API Workflow
 
 on:
-  workflow_dispatch:
-    inputs: { }
   push:
     branches: [ "main" ]
   pull_request:
@@ -10,8 +8,11 @@ on:
 
 jobs:
   run-api-automation:
+
     runs-on: ubuntu-latest
+
     steps:
+
       - uses: actions/checkout@v3
 
       - name: Set up JDK 17
