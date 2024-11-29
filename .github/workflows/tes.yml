@@ -30,6 +30,13 @@ jobs:
         run: chmod +x gradlew
 
       - name: Execute API Test
-        run: ./gradlew apiTest
+        run: ./gradlew clean test
+
+      - name: Archive test result
+        uses: actions/upload-artifact@v4.3.0
+        if: always ()
+        with:
+          name: cucumber
+          path: reports/cucumber-api-report.html
 
 
