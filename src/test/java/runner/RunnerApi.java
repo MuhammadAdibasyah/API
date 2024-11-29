@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         tags = "@Api"
 )
 
-public final class ApiRunner {
+public class RunnerApi {
 }
