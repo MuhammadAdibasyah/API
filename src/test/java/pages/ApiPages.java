@@ -12,7 +12,7 @@ import java.util.List;
 import static helper.Models.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ApiPage {
+public class ApiPages {
 
     String setURL , globalId;
     Response res;
